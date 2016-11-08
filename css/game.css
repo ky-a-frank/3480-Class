@@ -2,17 +2,26 @@
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 100); }
+.lava          { background-image: url("../img/water.png"); }
 .wall          { background: white;   }
-
+.powerup {background-image: url("../img/powerup.png");}
 .actor  { position: absolute;  }
-.coin   { background: rgb(240, 220, 80); }
-.player { background: rgb(64, 64, 64); }
-.floater {background: cyan;}
-.bunny {background: brown;}
+.coin   { background-image: url("../img/coin.png"); }
+.player { background-image: url("../img/player.gif"); }
+.bunny {background-image: url("../img/enemy.gif");}
+.key {background-image: url("../img/key.png");}
+.drop {background-image: url("../img/drop.png");}
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+.lost .player {
+  background-image: url("../img/player.gif");
+}
+.won .player {
+  background-image: url("../img/win.gif");
+  background-size: 100%;
 }
